@@ -1,0 +1,39 @@
+/*Page settings*/
+.navMainBackgroundImage{
+    opacity: 0.3;
+    filter: alpha(opacity=30); /* For IE8 and earlier */
+}
+.navbarMainColor{
+    background-color:#5bc0de;
+}
+.navbar-inverse .navbar-brand{
+    color:black;
+    font-weight: bold;
+    font-style: italic;
+}
+.navbar-inverse .navbar-nav>li>a{
+    color:black;
+}
+ .col-lg-6 h2 ,.centerText{
+    text-align: center;
+}
+.centerText a {
+     background-color: #5bc0de;
+     color: white;
+}
+.centerText a:hover {
+    background-color: #3e8f3e;
+    color: white;
+
+}
+.lead{
+    font-size:13px
+}
+.centerTextBlock{
+    margin-top:0px !important; /*Overrides the bootstrap */
+}
+.email{
+    font-size:20px;
+    color:#5bc0de;
+}
+

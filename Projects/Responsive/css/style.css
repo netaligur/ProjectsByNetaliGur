@@ -1,0 +1,149 @@
+/*General settings*/
+*{
+    margin:0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border:0px;
+}
+
+/*Page Settings*/
+body{
+    width:100%;
+    height:100%;
+    background-image: url("../images/new_york_888.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#wrapper{
+    width:750px;
+    background-color: #8fa2b6;
+    margin:0 auto;
+    opacity:0.93;
+}
+#fixedNavBar{
+    position:fixed;
+    top:0;
+    left:auto;
+    background-color: black;
+    width:100%;
+    z-index:1;
+}
+
+#topNav{
+    margin-top:15px;
+}
+#topNav li{
+    display:inline;
+}
+#topNav a{
+    color: gold;
+    padding:10px;
+    font-weight: bold;
+    font-style: italic;
+}
+#topNav a:hover{
+    text-decoration: underline;
+    color:#bbbbdf;
+}
+#home{
+    margin-top:50px;
+}
+section , footer {
+    margin:20px;
+    width:92%;
+}
+footer{
+    background-color: darkgrey;
+    width: inherit;
+    margin:0px;
+}
+
+p {
+    margin: 10px auto;
+
+}
+h1 ,h2{
+    padding:5px;
+}
+.float{
+    float:left;
+}
+.clear{
+    clear:both;
+}
+.requiredRed{
+    color:red;
+}
+.textArea
+{
+    width : 288px ;
+    height : 200px;
+    background-color:white;
+}
+.form{
+    width:400px;
+}
+.contactMe{
+    display: none;
+}
+.firstAboutmePic{
+
+}
+.secondAboutmePic{
+    display: none;
+}
+/*Media Queries*/
+
+@media only screen and (min-width:460px) and (max-width:850px){
+    #wrapper , section {
+        width:90%;
+    }
+    p {
+        width:90%;
+    }
+    .firstAboutmePic{
+        display: none;
+    }
+    .secondAboutmePic{
+        display: block;
+        margin:0 auto;
+    }
+
+
+}
+
+@media only screen and (max-width:461px) {
+    #wrapper , section{
+        width:80%;
+    }
+    p {
+        width:90%;
+    }
+    #topNav li{
+        display:block;
+    }
+    #home{
+        margin-top:74px;
+    }
+    .contactMe {
+        display: block;
+    }
+    .form{
+        display: none;
+    }
+    .firstAboutmePic{
+        display: none;
+    }
+    .secondAboutmePic{
+        display: block;
+        margin:0 auto;
+    }
+    #topNav{
+        margin-top:2px;
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Netali Gur Form Example</title>
+        <meta name="viewport" content="width=320, initial-scale=1">
+        <link href="css/css.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300i,400,600,900" rel="stylesheet">
+        <script src="js/js.js" type="text/javascript"></script>
+    </head>
+    <body>
+    <div class="background">
+        <!-- Main article container -->
+        <article class="continer">
+            <h1>Contact Form</h1>
+            <section class="contactUs">
+                <p>SignUp Form</p>
+                <!-- Contact form -->
+                <form class="contactUsForm" method="post" action="mailto:netali.gur@gmail.com" onsubmit="return checkedForm(this)">
+                    <fieldset>
+                    <legend>Please fill out the form</legend>
+                    <div class="centerForm">
+                        <div>
+                            <label for="userName">Your Name:<span class="required">*</span> </label>
+                            <input type="text" class ="input" id="userName" name="uName" placeholder="Netali Gur" pattern="[a-zA-Z]* [a-zA-Z]*">
+                            <p class="missingFormInput"></p>
+                        </div>
+                        <div>
+                            <label for="userEmail"> Your Email:<span class="required">*</span> </label>
+                            <input type="email" class ="input" id="userEmail" name="uEmail" placeholder="netali.gur@gmail.com">
+                            <p class="missingFormInput"></p>
+                        </div>
+                        <div>
+                            <label for="userColor">choose a color:</label>
+                            <input type="color" id="userColor" name="uColor">
+                        </div>
+                        <div>
+                            <label for="userColor">Subject:<span class="required">*</span></label>
+                            <input list="subjects" id="subject" placeholder="please choose a subject" name="subj">
+                            <datalist id="subjects">
+                                <option value="Offer A job">Offer A job</option>
+                                <option value="make remarks">make remarks</option>
+                                <option value="other">other</option>
+                            </datalist>
+                            <p class="missingFormInput"></p>
+                        </div>
+                        <label class="checkBox">how you got to this page</label><br>
+                        <input class="checkBox" type="checkbox" id="checkBox1">
+                        <label class="checkBox" for="checkBox1">heard from a friend</label><br>
+                        <input class="checkBox" type="checkbox" id="checkBox2">
+                        <label class="checkBox" for="checkBox2">i invited you</label><br>
+                        <input class="checkBox" type="checkbox" id="checkBox3">
+                        <label class="checkBox" for="checkBox3">saw in the internet</label><br>
+                        <label class="checkBox" for="content">Content:</label><br>
+                        <textarea id="content" name="content" placeholder="your text" class="textArea"></textarea><br>
+                        <input type="submit" id="submit" name="submit" value="Send" class="send" >
+                    </div>
+                    </fieldset>
+                </form>
+                <!-- This section will be presented only on small screen (mobile) -->
+                <section id="contactMe">
+                    <h4>
+                        Netali Gur <br>
+                        054-8189198 <br>
+                    </h4>
+
+                </section>
+            </section>
+        </article>
+    </div>
+    <!-- Footer with copy rights -->
+    <footer>
+        Copyright © Netali Gur
+    </footer>
+    </body>
+</html>

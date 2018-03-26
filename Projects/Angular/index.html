@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="todoListApp">
+    <head>
+        <meta charset="UTF-8">
+        <title>TO DO LIST</title>
+        <meta name="viewport" content="width=320, initial-scale=1">
+        <script src="app/lib/angular.min.js" type="text/javascript"></script>
+        <script src="app/lib/angular-route.min.js" type="text/javascript"></script>
+        <script src="app/lib/angular-animate.min.js" type="text/javascript"></script>
+        <script src="app/app.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="content/css/css.css" type="text/css" rel="stylesheet">
+        <script src="app/lib/jquery.min.js"></script>
+        <script src="app/lib/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+        <!-- Main header Nav -->
+        <header ng-include="'header.html'"></header>
+        <!-- views according to the url -->
+        <div class="content center" ng-view></div>
+    </body>
+</html>

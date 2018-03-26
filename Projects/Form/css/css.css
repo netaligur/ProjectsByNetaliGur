@@ -1,0 +1,186 @@
+/*General Definitions*/
+*{
+    padding:0;
+    margin: 0;
+}
+img{
+    border:0px;
+}
+a{
+    text-decoration: none;
+}
+/*Page Definitions*/
+
+body{
+    background-image:  url("../images/background.svg");
+    background-repeat: no-repeat ;
+    background-size: cover ;
+    background-color:#e2e2e2;
+    font-family: 'Yellowtail', cursive;
+}
+.continer{
+    width:400px;
+    margin:0 auto;
+    position:relative;
+    top:20px;
+}
+h1{
+    word-spacing: 10px;
+    text-align: center;
+    letter-spacing:7px;
+}
+.contactUs{
+    background-color:#efefef;
+    width:400px;
+    padding-bottom: 10px;
+    font-family: 'Titillium Web', sans-serif;
+    border-radius: 4px;
+    margin-top:5px;
+
+}
+.contactUsForm{
+    margin:5px auto;
+    width:290px;
+    padding-bottom: 10px;
+}
+.contactUs p{
+    text-align: center;
+    color:white;
+    font-weight: 600;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color:black;
+    padding:10px;
+
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width:100%;
+    background-color:gray;
+
+}
+
+.textArea{
+    width:260px;
+    height: 100px;
+}
+.background{
+    height: 100vh;
+    background:  url("../images/superGirl.png")center right 100px;
+    -webkit-background-size: 150px;
+    background-size: 150px;
+    background-repeat: no-repeat;
+}
+.send{
+    background-color:black;
+    color:white;
+    padding:5px;
+    border-radius: 5px;
+}
+.centerForm{
+    margin:0 auto;
+    width:260px;
+    padding:5px;
+}
+.required{
+    color:red;
+}
+#contactMe{
+    display:none;
+}
+p.missingFormInput{
+    background-color:inherit;
+    color:red;
+    text-align: left;
+    font-size:10px;
+    margin:0;
+    padding: 0;
+    display:none;
+}
+/*Media Queries */
+
+@media only screen and (min-width:601px) and (max-width:889px){
+    .background{
+        background-image: none;
+    }
+}
+
+@media only screen and (min-width:450px) and (max-width:600px){
+    .background{
+        background-image: none;
+    }
+    .contactUs{
+        background-color: #d2d7e2;
+        width:100%;
+    }
+    .continer{
+        width:100%;
+    }
+
+}
+
+@media only screen and (min-width:255px) and (max-width:449px){
+    .background{
+        background-image: none;
+    }
+    .contactUs{
+        width:100%;
+        height:100%;
+        padding-bottom:20px;
+    }
+    .contactUsForm{
+        width:80%;
+    }
+    .continer{
+        background-color:red;
+        width:100%;
+
+    }
+    .centerForm{
+        width:75%;
+        margin:0;
+    }
+
+    label{
+        display:block;
+
+    }
+    input{
+        display:block;
+    }
+    .textArea{
+        width:91%;
+    }
+    .checkBox{
+        display: inline-block;
+    }
+    label,p{
+        font-size: 0.8rem;
+    }
+
+}
+
+@media only screen and (max-width:254px){
+    .background{
+        background-image: none;
+    }
+    .contactUs{
+        width:100%;
+    }
+    .continer{
+        background-color:blue;
+        width:100%;
+
+    }
+    .contactUsForm{
+        display: none;
+    }
+    #contactMe{
+        display: block;
+    }
+
+}
+
+

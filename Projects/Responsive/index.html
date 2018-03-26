@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Netali Gur - NYC</title>
+        <meta name="viewport" content="width=320, initial-scale=1">
+        <link href="css/style.css" type="text/css" rel="stylesheet">
+        <script src="js/jquery-3.2.1.js" type="text/javascript"></script>
+        <script src="js/js.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <!--Header logo and navigation-->
+        <header id="fixedNavBar">
+            <img class="float" src="images/cutmypic.png" alt="logo" height="50">
+            <nav class="float">
+                <ul id="topNav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#images">Images</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                </ul>
+            </nav>
+            <div class="clear"></div>
+        </header>
+        <!--Main Wrapper of the page-->
+        <div id="wrapper">
+            <!-- First section home -->
+            <section id="home">
+                <h1>New York- the Big Apple</h1>
+                <p>On october 2017 i visited new york and it was a amazing experience</p>
+                <p>there are so many things to see in new york :</p>
+                <p>
+                if you like the nature - then central park is the place for you (it also has a zoo ! )
+                if you like special food- then there are many surprises in new yourk like very good pizzas and desserts
+                if you like site seeing - you have theStatue of Liberty , Space Museum , The Brooklyn Bridge , time square and many more
+                </p>
+            </section>
+            <hr>
+            <!-- Second section images -->
+            <section id="images">
+                <img src="images/new_york_1.jpg" alt="nyc1" >
+                <img src="images/new_york_2.jpg" alt="nyc2" >
+                <img src="images/new_york_3.jpg" alt="nyc3">
+                <img src="images/new_york_4.jpg" alt="nyc4">
+                <img src="images/new_york_5.jpg" alt="nyc5">
+                <img src="images/new_york_6.jpg" alt="nyc5">
+            </section>
+            <hr>
+            <!-- 3th section about -->
+            <section id="about">
+                <h2>
+                    About Me:
+                </h2>
+                <img src="images/new_york_88.jpg" alt="Netali Gur" align=center class="firstAboutmePic">
+                <img src="images/secondAboutme.png" alt="Netali Gur" align=center class="secondAboutmePic">
+                <p>
+                    My name is Netali Gur and i'm 30 years old and i live in Ramat-Gan.
+                    I have a degree in software engineering and I really like programming.
+                    I hope you liked my site that I built and we will see you on the next sites.
+                </p>
+
+            </section>
+            <hr>
+            <!-- 4th section contact -->
+            <section id="contact">
+                <h2>
+                   Contact Me:
+                </h2>
+                <form action="mailto:netali.gur@gmail.com" method="post" class="form">
+                    <label for="name">Full Name:</label><span class="requiredRed">*</span><br>
+                    <input type="text" id="name" name="name" placeholder="Netali Gur" pattern="[a-zA-Z]* [a-zA-Z]*" requiredRed ><br><br>
+                    <label for="email">Email: </label><span class="requiredRed">*</span><br>
+                    <input type="email" id="email" name="email" placeholder="netali.gur@gmail.com" requiredRed><br><br>
+                    <label for="text">Your Text:</label><br>
+                    <textarea class="textArea" name="comment" id="text" placeholder="Your Text" ></textarea><br><br>
+                    <input type="submit" name="submit" id="submit" value="submit"><br><br>
+                </form>
+                <section class="contactMe">
+                    <h3>
+                        Netali Gur <br>
+                        054-8189198 <br>
+                        netali.gur@gmail.com <br>
+                    </h3>
+                </section>
+            </section>
+            <!-- footer with copyright details-->
+            <footer>
+                Copyright © Netali Gur
+            </footer>
+        </div>
+    </body>
+</html>

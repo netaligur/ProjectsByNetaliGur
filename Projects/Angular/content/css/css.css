@@ -1,0 +1,213 @@
+/*General settings*/
+*{
+    padding: 0;
+    margin: 0;
+}
+img{
+    border:0px;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background: #e2e2e2;
+
+}
+/*Page settings*/
+
+/*Overriding the .navbar-inverse from bootstrap*/
+.navbar-inverse {
+    background-color: #117a8b !important;
+    border-color: silver !important;
+}
+/*Overriding the .navbar-inverse .navbar-nav>li>a from bootstrap*/
+.navbar-inverse .navbar-nav>li>a{
+    color:white !important;
+}
+/*Overriding the .navbar-inverse .navbar-brand from bootstrap*/
+.navbar-inverse .navbar-brand{
+    color: white !important;
+    font-weight: bold !important;
+}
+
+/*Main div*/
+.content{
+    width: 70%;
+    height: 70vh;
+    margin: 0 auto;
+    margin-top: 10px;
+    position: relative;
+}
+.content:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(109, 119, 109, 0.34);
+    width: 100%;
+    height: 100%;
+    opacity : 0.3;
+    z-index: -1;
+}
+/*Overriding the .carousel from bootstrap*/
+.carousel{
+    position: initial !important;
+}
+#contactMe input,#contactMe textarea {
+    display: block;
+    margin: 15px auto;
+    width:40%;
+    border-top-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+#contactMe{
+    display: block;
+    margin-top:5%
+}
+textarea{
+
+    height: 70px;
+}
+.submitForm{
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+#contactMe.ng-invalid .submitForm{
+    cursor: not-allowed;
+    background-color: #9282af;
+}
+#contactMe div p{
+    color: red;
+}
+#todoList{
+    list-style: none;
+}
+#todoList li h2, #todoList li p{
+    text-align: left;
+    padding-left:1%;
+
+
+}
+#todoList li h2{
+}
+.center {
+    text-align: center;
+}
+.checkBoxTODO{
+    float:left;
+    margin: 1.5% 1%;
+}
+.clear{
+    clear:both;
+}
+.removeTODO{
+    float: right;
+    margin: 2%;
+}
+.addNinja{
+    bottom: 0px;
+    position: absolute;
+    height: 8%;
+    width: 100%;
+
+}
+#todoListTOuser{
+    height: 92%;
+    overflow-y: scroll;
+}
+.addNinja form {
+    padding-top:1%;
+}
+
+#addTodo{
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 0.5%;
+    border-radius: 11%;
+}
+#addTODOToList.ng-invalid #addTodo{
+    cursor: not-allowed;
+    background-color: #9282af;
+}
+/*Overriding the hr from bootstrap*/
+hr {
+    margin-top: 0px !important;
+}
+
+/*Angular animation settings*/
+div.ng-enter {
+    transition:0.5s linear all;
+    opacity:0;
+}
+div.ng-enter.ng-enter-active {
+    opacity:1;
+}
+
+#todoList li.ng-enter {
+    transition:0.8s linear all;
+    opacity:0;
+}
+#todoList li.ng-enter.ng-enter-active {
+    opacity:1;
+}
+
+#todoList li.ng-leave {
+    transition:0.5s linear all;
+    opacity:1;
+}
+#todoList li.ng-leave.ng-leave-active {
+    opacity:0;
+}
+
+/*Media queries*/
+
+@media only screen and (max-width:300px) {
+    .content {
+        width: 99%;
+    }
+    .center {
+         text-align: left;
+    }
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
+    height: 327px;
+    opacity: 0.3;
+}
+.carouselTextColor{
+    color:black;
+}
+
+@media only screen and  (max-width:500px){
+    #contactMe input, #contactMe textarea {
+        width: 68%;
+    }
+    header{
+        display: grid;
+    }
+    .todoProp{
+        display: block;
+        margin: 0 auto;
+        width: 99%;
+    }
+}
+
+@media only screen and  (max-width:600px){
+    #todoListTOuser {
+        height: 77%;
+    }
+    .addNinja {
+        height: 23%;
+        border-top: 1px solid white;
+    }
+
+    #addTODOToList input,#addTODOToList textarea {
+        display: block;
+        margin: 0 auto;
+    }
+
+}

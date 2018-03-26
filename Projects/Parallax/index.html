@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Parallax</title>
+        <meta name="viewport" content="width=320, initial-scale=1">
+        <link href="styles/css.css" rel="stylesheet" type="text/css">
+        <script src="js/jquery-3.2.1.js" type="text/javascript"></script>
+        <script src="js/js.js" type="text/javascript"></script>
+    </head>
+    <body>
+    <!-- Progress footer div -->
+    <div id="progress" data-0="width:0%;" data-end="width:100%;"></div>
+        <!-- Main article -->
+        <article>
+            <!-- Main content div -->
+            <div id="content">
+                <!-- First Section - welcome and instructions  -->
+                <section class="bg1 box" data-0p="top:0%;" data-5p="position:fixed">
+                    <div class="border">
+                        <p class="sectionHeaderText">
+                            Keep
+                        </p>
+                        <p class="sectionHeaderText">
+                            Calm
+                        </p>
+                        <p class="sectionHeaderText">
+                            and
+                        </p>
+                        <p class="sectionHeaderText">
+                            Scroll
+                        </p>
+                        <p class="sectionHeaderText">
+                            Down
+                        </p>
+                        <img class="arrow" src="images/arrow.gif" alt="arrow down" height="100">
+                    </div>
+                </section>
+                <!-- 2th Section - Gallery-->
+                <section  class="box gallery" data-0p="top:100%;" date-500p="top:100%" data-600p="top:0%;" data-605p="position:fixed;">
+                    <div class="border flex gallerySection">
+                        <input  id="left" class="directionsButtons" type=button value="<">
+                        <div id="continerSlides">
+                            <ul class="slides">
+                                <li  class="slide slide1 flex" rel="1"><img src="images/arnon1.jpg"></li>
+                                <li  class="slide slide2 flex" rel="2"><img src="images/arnon2.jpg"></li>
+                                <li  class="slide slide3 flex" rel="3"><img src="images/arnon3.jpg"></li>
+                                <li  class="slide slide4 flex" rel="4"><img src="images/arnon4.jpg"></li>
+                                <li  class="slide slide5 flex" rel="5"><img src="images/arnon5.jpg"></li>
+                            </ul>
+                        <div style="clear:both">
+                        </div>
+                        </div>
+                        <input  id="right" class="directionsButtons" type=button value=">">
+                    </div>
+                </section>
+                <!-- 3th Section - panels-->
+                <section class="box" data-0p="top:100%;" data-1200p="top:100%;" data-1300p="top:0%;" data-1305p="position:fixed;">
+                    <div class="border">
+                        <ul class="tabs">
+                            <li rel="panel1" class="panels">Arnon</li>
+                            <li rel="panel2" class="panels">Ami</li>
+                            <li rel="panel3" class="panels">Summary</li>
+                        </ul>
+                        <section id="panel1" class="panel active">
+                            <p>
+                                Arnon was adopted on December 28, 2013. Arnon is my
+                                first cat and in my opinion is very special.
+                                I think it's better to adopt and not buy a cat
+                                Because these cats (in shelters) also deserve
+                                and want a warm home and they have to get it.
+                            </p>
+                        </section>
+                        <section id="panel2" class="panel">
+                            <p>
+                                Ami was adopted at March 2014 and he is also my first dog.
+                                Ami came to the shelter with his sister Tami and Tami
+                                was adopted 1 day before him.
+                                Ami is a very good and loyal dog and good with the young and
+                                elderly people.
+                            </p>
+                        </section>
+                        <section id="panel3" class="panel">
+                            <p>
+                            Go Adopt A Dog Or Cat Today!!!
+                            </p>
+                        </section>
+                    </div>
+                </section>
+                <!-- 3th Section - Ending (Thank you) -->
+                <section class="box flex" data-0p="top:100%; transform:scale(0) rotate(0deg);" data-1800p="top:100%;" data-1900p="top:0%;transform:scale(1) rotate(1440deg) " data-1805p="position:fixed;">
+                    <h2 class="ending">Thank you for visiting my site!</h2>
+
+                </section>
+            </div>
+        </article>
+        <script type="text/javascript" src="js/skrollr.min.js"></script>
+        <script type="text/javascript">
+            //initialing the plugin
+            var s = skrollr.init();
+        </script>
+    </body>
+</html>

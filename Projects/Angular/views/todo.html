@@ -1,0 +1,32 @@
+<!--Main display of the TODOS-->
+<div id="todoListTOuser">
+    <!-- Search TO DO -->
+    <input class="todoProp" type="text" ng-model="search" placeholder="Search for TODO">
+    <!-- Order by name  TO DO -->
+    <button class="todoProp" ng-click="order = 'title'">Order by name</button>
+    <ul id="todoList">
+        <li ng-repeat="todo in todos| orderBy:order | filter:search" class="todoList">
+            <!--Remove TO DO button-->
+            <button class="removeTODO" ng-click="removeTODO(this)">remove</button>
+            <!--Done TO DO button-->
+            <input type="checkbox" class="checkBoxTODO" ng-click="doneTODO($index)">
+            <!-- the TO DO -->
+            <h2 class="title">{{todo.title}}</h2>
+            <div class="clear"></div>
+            <p class="text">{{todo.text}}</p>
+            <hr>
+        </li>
+
+    </ul>
+</div>
+<hr>
+<!--Adding a new TO DO-->
+<div class="addNinja">
+    <form id="addTODOToList" name="todoToList" ng-submit="addTODO()">
+        <input type="text" placeholder="Title" ng-model="newTODO.title" maxlength="20" ng-required="true">
+        <input type="text" placeholder="Task Details" ng-model="newTODO.text" maxlength="40" ng-required="true">
+        <input type="submit" value="Add" ID="addTodo">
+    </form>
+</div>
+
+
